@@ -1,0 +1,25 @@
+.bg-header{
+    background-color: #FFEFE6;
+}
+.header-bar{
+    justify-content: space-between;
+}
+.bg-heading{
+    font-family: "Lexend";
+    font-size: 2.7rem;
+    font-weight:600;
+    margin-top: 4rem;
+}
+.bg-heading-text {
+    color: #FF6000;
+}
+.bg-button{
+    background-color: #FF6000;
+    border: none;
+    font-family: "Lexend";
+    width: 15rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 50px;
+    margin-top: 1rem;
+}
