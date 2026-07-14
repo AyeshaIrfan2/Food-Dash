@@ -22,8 +22,8 @@
     <link rel="stylesheet" href="assests/css/style.css" />
   </head>
   <body>
-    <header class="bg-header header-bar">
-      <nav class="d-flex justify-content-between align-content-center py-3 px-5">
+    <header class="bg-header">
+      <!-- <nav class="d-flex justify-content-between align-items-center py-3 px-5">
         <img src="assests/images/logo.png" alt="" />
         <a class="" href="#">Home</a>
         <a href="#">Menu</a>
@@ -31,24 +31,73 @@
         <a href="#">Service</a>
         <a href="#">About</a>
         <img src="assests/images/icons2.png" alt="" />
-      </nav>
+      </nav> -->
     </header>
 
     <main>
       <div class="bg-header">
         <div class="container">
           <div class="row">
-            <div class="col-6">
+            <div class="col-6 d-flex flex-column justify-content-center gap-3">
               <div class="bg-heading">
-                <span class="bg-heading-text">Quick</span> and
-                <span class="bg-heading-text">Tasty Food Delivered </span>with
-                <span class="bg-heading-text">a Dash of </span> Speed
+                <span>Quick</span> and <span>Tasty Food Delivered </span>with
+                <span>a Dash of </span> Speed
               </div>
-              <button class="bg-button">Order Now</button>
-              <button>Track Order</button>
+              <button class="btn btn-primary rounded-pill btn-order-now">
+                Order Now
+              </button>
+              <button
+                class="btn btn-outline-primary rounded-pill btn-track-order"
+              >
+                Track Order
+              </button>
             </div>
             <div class="col-6">
               <img class="img-fluid" src="assests/images/header.png" alt="" />
+            </div>
+            <!-- row2 -->
+            <div class="bg-white shadow rounded-4 p-3 position-absolute top-100 start-50 translate-middle">
+              <div class="row">
+                <div class="col-4 d-flex align-items-center gap-3">
+                  <img
+                    class="icons"
+                    src="assests/images/icons/fast-delivery 1.png"
+                    alt=""
+                  />
+                  <div>
+                    <div class="d-box-heading">Fast Delivery</div>
+                    <div class="d-box-subheading">
+                      Promise To Deliver Within 30 Mins
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 d-flex align-items-center gap-3">
+                  <img
+                    class="icons"
+                    src="assests/images/icons/fresh.png"
+                    alt=""
+                  />
+                  <div>
+                    <div class="d-box-heading">Fresh Food</div>
+                    <div class="d-box-subheading">
+                      Your Food Will Be Delivered 100% Fresh To Your Home.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 d-flex align-items-center gap-3">
+                  <img
+                    class="icons"
+                    src="assests/images/icons/box 1.png"
+                    alt=""
+                  />
+                  <div>
+                    <div class="d-box-heading">Free Delivery</div>
+                    <div class="d-box-subheading">
+                      Your Food Delivery Is Absolutely Free. No Cost Just Order
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

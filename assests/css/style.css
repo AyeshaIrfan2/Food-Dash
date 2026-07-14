@@ -1,25 +1,55 @@
+body{
+    font-family: "Lexend";
+}
 .bg-header{
     background-color: #FFEFE6;
 }
-.header-bar{
-    justify-content: space-between;
-}
+
 .bg-heading{
-    font-family: "Lexend";
+    
     font-size: 2.7rem;
     font-weight:600;
     margin-top: 4rem;
 }
-.bg-heading-text {
+.bg-heading span{
     color: #FF6000;
 }
-.bg-button{
+.btn-order-now{
     background-color: #FF6000;
-    border: none;
-    font-family: "Lexend";
-    width: 15rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    border-radius: 50px;
-    margin-top: 1rem;
+    border-color: #FF6000;
+    width: 35%;
+}
+.btn-order-now:hover{
+    background-color: #fc6101;
+    border-color: #e55801;
+}
+.btn-order-now:active{
+    background-color: #da5401 !important;
+    border-color: #da5401 !important;
+}
+.btn-track-order{
+    border-color: #FF6000;
+    width: 35%;
+    color:#FF6000 ;
+}
+.btn-track-order:hover{
+    border-color: #FF6000;
+    background-color: #FF6000 ;
+    
+}
+.btn-track-order:active{
+    border-color: #FF6000 !important;
+    background-color: #da5401 !important;
+    
+}
+.d-box-heading{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.d-box-subheading{
+    color: #939393;
+    font-size: 0.5rems;
+}
+.icons{
+    width: 80px;
 }
