@@ -53,3 +53,21 @@ body{
 .icons{
     width: 80px;
 }
+
+.dish-subhead{
+    color: #B3B3B3;
+    font-size: 0.8rem;
+}
+.indian-head{
+    margin-top: 5rem;
+}
+.p-name{
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-bottom: 1rem;
+}
+.p-link{
+    font-size: 1.2rem;
+    text-decoration:none;
+    color: #FF6000;
+}
