@@ -9,7 +9,7 @@ body{
     
     font-size: 2.7rem;
     font-weight:600;
-    margin-top: 4rem;
+    
 }
 .bg-heading span{
     color: #FF6000;
@@ -50,6 +50,9 @@ body{
     color: #939393;
     font-size: 0.5rems;
 }
+.header-img{
+    padding-bottom: 4rem;
+}
 .icons{
     width: 80px;
 }
@@ -71,3 +74,47 @@ body{
     text-decoration:none;
     color: #FF6000;
 }
+.random-bar{
+    background-color: #FFEFE6;
+}
+.m-btn{
+    width: 40%;
+    padding: 0.6rem;
+    background-color: #FF7B2B;
+    border: none;
+
+}
+.m-btn:hover{
+    border-color: #FF6000;
+    background-color: #FF6000 ;
+    
+}
+.m-btn:active{
+    border-color: #FF6000 !important;
+    background-color: #da5401 !important;
+    
+}
+.image-box{
+    height: 130px;
+}
+.f-name{
+    padding-top: 3rem;
+    background-color: #FFEFE6;
+    width: 75%;
+    height: 300px;
+    
+}
+.f-text{
+    font-size: 1.5rem;
+    font-weight: 500;
+    
+}
+.f-text span{
+    color: #FF6000;
+    
+}
+.m-img{
+    width: 65%;
+}
+
+
