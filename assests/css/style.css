@@ -98,13 +98,13 @@ body{
     height: 130px;
 }
 .f-name{
-    padding-top: 3rem;
     background-color: #FFEFE6;
     width: 75%;
     height: 300px;
     
 }
 .f-text{
+    padding-top: 7rem;
     font-size: 1.5rem;
     font-weight: 500;
     
@@ -116,5 +116,12 @@ body{
 .m-img{
     width: 65%;
 }
+.menu-margin{
+    margin-top: 7.5rem;
+}
+.offer-page{
+    margin-top: 4rem;
+}
+
 
 
