@@ -1,0 +1,60 @@
+.login {
+  padding-top: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  /* padding-bottom: 5rem; */
+}
+.main-img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+.h-heading {
+  padding-top: 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.img-login {
+  width: 20px;
+}
+.buttons {
+  margin-top: 3rem;
+}
+.h-input {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 10px 5px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+  background: transparent;
+}
+.h-text {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: #2a2a2a;
+}
+.btn-anchor{
+    background-color: #FF6000;
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 2rem;
+}
+.btn-anchor:hover{
+    background-color: #ef5d02;
+    color: #ffffff;
+}
+.btn-anchor:active{
+    background-color: #e45902;
+    color: #ffffff;
+}
+.sign-up-text{
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+}
+.sign-up-text a{
+    color: #FF6000;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-decoration: none;
+}

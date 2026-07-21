@@ -122,6 +122,41 @@ body{
 .offer-page{
     margin-top: 4rem;
 }
+.fd-footer{
+    background-color: #FFEFE6;
+    margin-top: 4.6rem;
+    border-top: 0.3rem dashed #FF6000 ;
+    height: 325px;
+    line-height: 2.5;
+}
 
-
+.col-title{
+    font-size: 2.3rem;
+    font-family: "Wendy One";
+}
+.col-title span{
+    color: #FF6000;
+}
+.col-data{
+    color: #939393;
+    font-size: 1rem;
+}
+.ft-follow{
+    font-size: 2rem;
+    color: #FF6000;
+    font-family: "Wendy One";
+}
+.ft-icons{
+    color: #939393;
+    font-size: 1rem;
+}
+.col-title-2{
+    color: #FF6000;
+    font-size: 2rem;
+}
+.col-data-anchor a{
+    color: #939393;
+    font-size: 1rem;
+    text-decoration: none;
+}
 
