@@ -34,7 +34,64 @@
     <link rel="stylesheet" href="assests/css/style.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="assests/images/logo.png" alt="Logo" class="logo" />
+          </a>
+
+          <!-- Mobile Button -->
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menu -->
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Offers</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Service</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+            </ul>
+
+            <!-- Right Side -->
+            <div class="nav-icons">
+              <div class="search-btn">
+                <i class="bi bi-search"></i>
+              </div>
+
+              <img
+                src="assests/images/customer.png"
+                class="profile-img"
+                alt="Profile"
+              />
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <main>
       <div class="bg-header position-relative">
@@ -69,10 +126,10 @@
 
           <!-- row2 -->
           <div
-            class="bg-white shadow rounded-4 p-3 position-absolute top-100 start-50 translate-middle w-75"
+            class="bg-white shadow rounded-4 p-3 feature-box position-relative position-lg-absolute top-lg-100 start-lg-50 translate-middle-lg w-lg-75 w-100"
           >
-            <div class="row">
-              <div class="col-4 d-flex align-items-center gap-3">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+              <div class="col d-flex align-items-center gap-3">
                 <img
                   class="icons"
                   src="assests/images/icons/fast-delivery 1.png"
@@ -86,7 +143,7 @@
                 </div>
               </div>
 
-              <div class="col-4 d-flex align-items-center gap-3">
+              <div class="col d-flex align-items-center gap-3">
                 <img
                   class="icons"
                   src="assests/images/icons/fresh.png"
@@ -100,7 +157,7 @@
                 </div>
               </div>
 
-              <div class="col-4 d-flex align-items-center gap-3">
+              <div class="col d-flex align-items-center gap-3">
                 <img
                   class="icons"
                   src="assests/images/icons/box 1.png"
@@ -120,12 +177,12 @@
       <!-- indian dish  -->
       <section class="indian-head">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-12 bg-heading">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-12 bg-heading text-lg-start text-center">
               Our <span>Best Delivered </span>Indian Dish
             </div>
-            <div class="col-lg-2 col-12"></div>
-            <div class="col-lg-4 col-12 dish-subhead d-flex align-items-center">
+            <div class="col-lg-2 d-none d-lg-block"></div>
+            <div class="col-lg-4 col-12 dish-subhead d-flex align-items-center text-lg-start text-center justify-content-center justify-content-lg-start mt-3 mt-lg-0">
               <div>
                 It’s Not Just About Bringing You Good Food From Restaurants, We
                 Deliver You Experience
@@ -133,7 +190,7 @@
             </div>
           </div>
           <!-- products -->
-          <div class="row">
+          <div class="row gy-4 mt-2">
             <div class="col-md-4 col-12 text-center">
               <img
                 class="img-fluid"
@@ -166,21 +223,46 @@
       </section>
       <!-- section-3 -->
       <section>
-        <div class="container">
-          <!-- part-1 -->
-          <div class="row">
-            <div class="col-12 random-bar">some text</div>
+         <!-- part-1 -->
+        <div class="container-fluid">
+          <div class="row random-bar">
+            <div class="region-strip d-flex flex-wrap justify-content-center justify-content-lg-between align-items-center">
+              <div class="region-item">
+                <img src="assests/images/Star1.png" alt="" />
+                Rajasthan
+              </div>
+              <div class="region-item">
+                <img src="assests/images/Star1.png" alt="" />
+                South Indian
+              </div>
+              <div class="region-item">
+                <img src="assests/images/Star1.png" alt="" />
+                Gujarat
+              </div class="region-item">
+              <div>
+                <img src="assests/images/Star1.png" alt="" />
+                Maharashtra
+              </div>
+              <div class="region-item">
+                <img src="assests/images/Star1.png" alt="" />
+                West Bengal
+              </div>
+            </div>
           </div>
+        </div>
+        <div class="container">
+         
+          
           <!-- part-2 -->
-          <div class="row">
-            <div class="col-9">
+          <div class="row align-items-center">
+            <div class="col-9 col-12 text-lg-start text-center">
               <div class="bg-heading pt-5">Our <span>Regular</span> Menu</div>
               <div class="dish-subhead mt-3">
                 <div>There Are Our Regular Menus.</div>
                 <div>You Can Order Anything You Like.</div>
               </div>
             </div>
-            <div class="col-3 d-flex align-items-center justify-content-center">
+            <div class="col-lg-3 col-12 d-flex align-items-center justify-content-center justify-content-lg-end mt-3 mt-lg-0">
               <button class="btn btn-primary mt-5 rounded-pill m-btn">
                 See All
               </button>
@@ -188,7 +270,7 @@
           </div>
           <!-- part-3 -->
           <div class="menu-margin">
-            <div class="row">
+            <div class="row gy-4">
               <div class="col-lg-4 col-md-6 col-12">
                 <!-- parent div  -->
                 <div class="f-name rounded-4 p-3">
@@ -274,7 +356,7 @@
           </div>
           <!-- part-4 -->
           <div class="menu-margin">
-            <div class="row">
+            <div class="row gy-4">
               <div class="col-lg-4 col-md-6 col-12">
                 <!-- parent div  -->
                 <div class="f-name rounded-4 p-3">
@@ -366,10 +448,10 @@
       <section>
         <div class="offer-page">
           <div class="container">
-            <div class="row">
-              <div class="col-lg-5">
+            <div class="row gy-3">
+              <div class="col-lg-5 col-12">
                 <img
-                  class="img-fluid rounded-4 h-100 w-100"
+                  class="img-fluid rounded-4 h-100 w-100 offer-img-main"
                   src="assests/images/img3.png"
                   alt=""
                 />
@@ -391,8 +473,8 @@
     <footer>
       <div class="fd-footer">
         <div class="container mt-4">
-          <div class="row">
-            <div class="col-4">
+          <div class="row gy-4">
+            <div class="col-lg-4 col-md-6 col-12">
               <div class="col-title"><span>Food</span> Dash</div>
               <div class="col-data">
                 <div>Food Dash ©2023 All Rights Reserved</div>
@@ -403,7 +485,7 @@
                 <i><i class="bi bi-instagram"></i></i>
               </div>
             </div>
-            <div class="col-2 ">
+            <div class="col-lg-2 col-md-6 col-12">
               <div class="col-title-2">Menu</div>
               <div class="col-data">
                 <div>Home</div>
@@ -412,7 +494,7 @@
                 <div>Avout Us</div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-md-6 col-12">
               <div class="col-title-2">Information</div>
               <div class="col-data">
                 <div>Menu</div>
