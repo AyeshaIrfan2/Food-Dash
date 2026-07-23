@@ -1,8 +1,13 @@
+html {
+  color-scheme: light only;
+  background-color: #ffffff;
+}
 body {
   font-family: "Lexend";
   margin: 0;
   padding: 0;
-  overflow-x: hidden;/* Hides horizontal overflow and prevents sideways scrolling. */
+  overflow-x: hidden;
+  background-color: #ffffff;
 }
 
 /* Navbar */
@@ -28,7 +33,7 @@ body {
 .nav-link {
   color: #8b8b8b;
   font-weight: 600;
-  transition: 0.3s;/* Makes CSS property changes smooth over 0.3 seconds. */
+  transition: 0.3s; /* Makes CSS property changes smooth over 0.3 seconds. */
 }
 
 .nav-link:hover {
@@ -80,7 +85,7 @@ body {
 .profile-img {
   width: 45px;
   height: 45px;
-flex-shrink: 0;
+  flex-shrink: 0;
   border-radius: 50%;
 
   object-fit: cover;
@@ -222,7 +227,7 @@ flex-shrink: 0;
   background-color: #ffefe6;
   width: 100%;
   height: 300px;
-  
+  overflow: visible;
 }
 .f-text {
   padding-top: 7rem;
@@ -288,225 +293,202 @@ flex-shrink: 0;
   font-size: 1rem;
   text-decoration: none;
 }
-@media (max-width:991px){
+@media (max-width: 991px) {
+  .logo {
+    width: 140px;
+  }
 
-.logo{
-    width:140px;
-}
+  .navbar-nav {
+    text-align: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
 
-.navbar-nav{
+  .nav-icons {
+    justify-content: center;
+    margin-top: 15px;
+  }
 
-    text-align:center;
-    gap:10px;
-    margin:20px 0;
-}
+  .bg-heading {
+    text-align: center;
+  }
 
-.nav-icons{
+  .btn-order-now,
+  .btn-track-order {
+    width: 100%;
+  }
 
-    justify-content:center;
-    margin-top:15px;
-}
-
-.bg-heading{
-
-    text-align:center;
-}
-
-.btn-order-now,
-.btn-track-order{
-
-    width:100%;
-}
-
-.header-img{
-
-    text-align:center;
-    margin-top:40px;
+  .header-img {
+    text-align: center;
+    margin-top: 40px;
     padding-bottom: 2rem;
-}
+  }
 
-.icons{
-
-    width:55px;
-}
-.feature-box {
+  .icons {
+    width: 55px;
+  }
+  .feature-box {
     margin-top: 2rem;
-}
+  }
 
-.random-bar{
+  .random-bar {
+    padding: 15px;
+  }
 
-    padding:15px;
-}
-
-.indian-head {
+  .indian-head {
     margin-top: 3rem;
-}
+  }
 
-.menu-margin{
+  .menu-margin {
+    margin-top: 3rem;
+  }
 
-    margin-top:3rem;
-}
+  .f-name {
+    margin-bottom: 40px;
+  }
 
-.f-name{
+  .offer-page img {
+    margin-bottom: 20px;
+  }
 
-    margin-bottom:40px;
-}
-
-.offer-page img{
-
-    margin-bottom:20px;
-}
-
-.fd-footer{
-
-    text-align:center;
-    line-height:2;
-}
-.col-data-anchor {
+  .fd-footer {
+    text-align: center;
+    line-height: 2;
+  }
+  .col-data-anchor {
     margin-bottom: 1.5rem;
+  }
 }
+@media (max-width: 768px) {
+  .bg-heading {
+    font-size: 2rem;
+  }
 
-}
-@media (max-width:768px){
+  .col-title {
+    font-size: 1.8rem;
+  }
 
-.bg-heading{
+  .col-title-2 {
+    font-size: 1.5rem;
+  }
 
-    font-size:2rem;
-}
-
-.col-title{
-
-    font-size:1.8rem;
-}
-
-.col-title-2{
-
-    font-size:1.5rem;
-}
-
-.f-text{
-
-    font-size:1.2rem;
-    padding-top:6rem;
-}
-.dish-subhead {
+  .f-text {
+    font-size: 1.2rem;
+    padding-top: 6rem;
+  }
+  .dish-subhead {
     font-size: 0.9rem;
     text-align: center;
-}
- 
-.region-item {
-    font-size: 0.85rem;
-}
+  }
 
+  .region-item {
+    font-size: 0.85rem;
+  }
 }
 @media (max-width: 575px) {
- 
-.container,
-.container-fluid {
+  .container,
+  .container-fluid {
     padding-left: 16px;
     padding-right: 16px;
-}
- 
-.logo {
+  }
+
+  .logo {
     width: 120px;
-}
- 
-.bg-heading {
+  }
+
+  .bg-heading {
     font-size: 1.6rem;
-}
- 
-.btn-order-now,
-.btn-track-order {
+  }
+
+  .btn-order-now,
+  .btn-track-order {
     max-width: 320px;
-}
- 
-.d-box-heading {
+  }
+
+  .d-box-heading {
     font-size: 1.1rem;
-}
- 
-.d-box-subheading {
+  }
+
+  .d-box-subheading {
     font-size: 0.8rem;
-}
- 
-.icons {
+  }
+
+  .icons {
     width: 45px;
-}
- 
-.feature-box .row > .col {
+  }
+
+  .feature-box .row > .col {
     text-align: left;
-}
- 
-.p-name {
+  }
+
+  .p-name {
     font-size: 1.1rem;
-}
- 
-.region-strip {
+  }
+
+  .region-strip {
     column-gap: 1.2rem;
     row-gap: 0.5rem;
-}
- 
-.f-name {
+  }
+
+  .f-name {
     min-height: 260px;
     padding: 1rem !important;
-}
- 
-.f-text {
+  }
+
+  .f-text {
     font-size: 1.05rem;
     padding-top: 5rem;
-}
- 
-.m-img {
+  }
+
+  .m-img {
     max-width: 160px;
-}
- 
-.f-name h2 {
+  }
+
+  .f-name h2 {
     font-size: 1.4rem;
-}
- 
-.col-title {
+  }
+
+  .col-title {
     font-size: 1.6rem;
-}
- 
-.ft-follow {
+  }
+
+  .ft-follow {
     font-size: 1.5rem;
-}
- 
-.col-title-2 {
+  }
+
+  .col-title-2 {
     font-size: 1.3rem;
-}
- 
-.offer-img-main {
+  }
+
+  .offer-img-main {
     min-height: 160px;
+  }
 }
- 
-}
- 
+
 /* ============ Extra small phones ============ */
 @media (max-width: 400px) {
- 
-.logo {
+  .logo {
     width: 100px;
-}
- 
-.bg-heading {
+  }
+
+  .bg-heading {
     font-size: 1.4rem;
-}
- 
-.icons {
+  }
+
+  .icons {
     width: 40px;
-}
- 
-.f-text {
+  }
+
+  .f-text {
     font-size: 0.95rem;
     padding-top: 4.2rem;
-}
- 
-.m-img {
+  }
+
+  .m-img {
     max-width: 130px;
-}
- 
-.f-name h2 {
+  }
+
+  .f-name h2 {
     font-size: 1.2rem;
-}
- 
+  }
 }
