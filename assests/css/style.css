@@ -9,86 +9,19 @@ body {
   overflow-x: hidden;
   background-color: #ffffff;
 }
-
-/* Navbar */
-
-.custom-navbar {
-  background: #fdf1ea;
-  padding: 18px 0;
-}
-
-/* Logo */
-
-.logo {
-  width: 170px;
-  max-width: 100%;
-}
-
-/* Navigation Links */
-
-.navbar-nav {
-  gap: 18px;
-}
-
-.nav-link {
-  color: #8b8b8b;
+.main-navbar{
   font-weight: 600;
-  transition: 0.3s; /* Makes CSS property changes smooth over 0.3 seconds. */
 }
-
-.nav-link:hover {
-  color: #ff6b00;
+.main-navbar a:hover{
+  color: #ff6000;
 }
-
-.nav-link.active {
-  color: black;
-}
-
-/* Right Side */
-
-.nav-icons {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-/* Search */
-
-.search-btn {
-  width: 45px;
-  height: 45px;
-
-  background: #ff6b00;
-
-  border-radius: 50%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  cursor: pointer;
-
-  transition: 0.3s;
-}
-
-.search-btn i {
-  color: white;
-  font-size: 20px;
-}
-
-.search-btn:hover {
-  transform: scale(1.08);
-}
-
-/* Profile */
-
-.profile-img {
-  width: 45px;
-  height: 45px;
-  flex-shrink: 0;
-  border-radius: 50%;
-
-  object-fit: cover;
+.search-icon {
+  background: #ff6000;
+  color: #ffffff;
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-right: 1rem;
+  font-size: 1.5rem;
 }
 
 .bg-header {
@@ -298,11 +231,11 @@ body {
     width: 140px;
   }
 
-  .navbar-nav {
+  /* .navbar-nav {
     text-align: center;
     gap: 10px;
     margin: 20px 0;
-  }
+  } */
 
   .nav-icons {
     justify-content: center;
