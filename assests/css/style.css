@@ -2,6 +2,7 @@ html {
   color-scheme: light only;
   background-color: #ffffff;
 }
+
 body {
   font-family: "Lexend";
   margin: 0;
@@ -9,12 +10,15 @@ body {
   overflow-x: hidden;
   background-color: #ffffff;
 }
-.main-navbar{
+
+.main-navbar {
   font-weight: 600;
 }
-.main-navbar a:hover{
+
+.main-navbar a:hover {
   color: #ff6000;
 }
+
 .search-icon {
   background: #ff6000;
   color: #ffffff;
@@ -30,90 +34,107 @@ body {
 }
 
 .bg-heading {
-  font-size: clamp(
-    2rem,
-    5vw,
-    2.7rem
-  ); /* Responsive font size: min 2rem, preferred 5vw, max 2.7rem     (5vw = 5% of the browser width)*/
+  font-size: clamp(2rem,
+      5vw,
+      2.7rem);
+  /* Responsive font size: min 2rem, preferred 5vw, max 2.7rem     (5vw = 5% of the browser width)*/
   font-weight: 600;
 }
+
 .bg-heading span {
   color: #ff6000;
 }
+
 .btn-order-now {
   background-color: #ff6000;
   border-color: #ff6000;
   width: 220px;
   max-width: 100%;
 }
+
 .btn-order-now:hover {
   background-color: #fc6101;
   border-color: #e55801;
 }
+
 .btn-order-now:active {
   background-color: #da5401 !important;
   border-color: #da5401 !important;
 }
+
 .btn-track-order {
   border-color: #ff6000;
   width: 220px;
   max-width: 100%;
   color: #ff6000;
 }
+
 .btn-track-order:hover {
   border-color: #ff6000;
   background-color: #ff6000;
 }
+
 .btn-track-order:active {
   border-color: #ff6000 !important;
   background-color: #da5401 !important;
 }
+
 .d-box-heading {
   font-size: 1.3rem;
   font-weight: 600;
 }
+
 .d-box-subheading {
   color: #939393;
   font-size: 0.5rems;
 }
+
 .header-img {
   padding-bottom: 4rem;
 }
+
 .header-img img {
   max-width: 100%;
   height: auto;
 }
+
 .icons {
   width: 80px;
   max-width: 20%;
   height: auto;
   flex-shrink: 0;
 }
-.feature-box {
+
+/* .feature-box {
   z-index: 2;
-}
+} */
 
 .dish-subhead {
   color: #b3b3b3;
   font-size: 0.8rem;
 }
+
 .indian-head {
   margin-top: 5rem;
 }
+
 .indian-head img {
   max-width: 100%;
   height: auto;
 }
+
 .p-name {
   font-size: 1.3rem;
   font-weight: 400;
   padding-bottom: 1rem;
 }
+
 .p-link {
   font-size: 1.2rem;
   text-decoration: none;
   color: #ff6000;
 }
+
 .random-bar {
   background-color: #ffefe6;
   padding-top: 0.6rem;
@@ -121,11 +142,13 @@ body {
   margin-left: 0;
   margin-right: 0;
 }
+
 .region-strip {
   width: 100%;
   row-gap: 0.75rem;
   column-gap: 2rem;
 }
+
 .region-item {
   display: inline-flex;
   align-items: center;
@@ -133,11 +156,13 @@ body {
   white-space: nowrap;
   font-size: 0.95rem;
 }
+
 .region-item img {
   width: 18px;
   height: auto;
   flex-shrink: 0;
 }
+
 .m-btn {
   min-width: 120px;
   padding: 0.6rem;
@@ -149,45 +174,56 @@ body {
   border-color: #ff6000;
   background-color: #ff6000;
 }
+
 .m-btn:active {
   border-color: #ff6000 !important;
   background-color: #da5401 !important;
 }
+
 .image-box {
   height: 130px;
 }
+
 .f-name {
   background-color: #ffefe6;
   width: 100%;
   height: 300px;
   overflow: visible;
 }
+
 .f-text {
   padding-top: 7rem;
   font-size: 1.5rem;
   font-weight: 500;
 }
+
 .f-text span {
   color: #ff6000;
 }
+
 .m-img {
   width: 55%;
   max-width: 220px;
 }
+
 .menu-margin {
   margin-top: 7.5rem;
 }
+
 .offer-page {
   margin-top: 4rem;
 }
+
 .offer-page img {
   max-width: 100%;
   height: auto;
 }
+
 .offer-img-main {
   min-height: 200px;
   object-fit: cover;
 }
+
 .fd-footer {
   background-color: #ffefe6;
   margin-top: 4.6rem;
@@ -201,31 +237,38 @@ body {
   font-size: 2.3rem;
   font-family: "Wendy One";
 }
+
 .col-title span {
   color: #ff6000;
 }
+
 .col-data {
   color: #939393;
   font-size: 1rem;
 }
+
 .ft-follow {
   font-size: 2rem;
   color: #ff6000;
   font-family: "Wendy One";
 }
+
 .ft-icons {
   color: #939393;
   font-size: 1rem;
 }
+
 .col-title-2 {
   color: #ff6000;
   font-size: 2rem;
 }
+
 .col-data-anchor a {
   color: #939393;
   font-size: 1rem;
   text-decoration: none;
 }
+
 @media (max-width: 991px) {
   .logo {
     width: 140px;
@@ -260,6 +303,7 @@ body {
   .icons {
     width: 55px;
   }
+
   .feature-box {
     margin-top: 2rem;
   }
@@ -288,10 +332,12 @@ body {
     text-align: center;
     line-height: 2;
   }
+
   .col-data-anchor {
     margin-bottom: 1.5rem;
   }
 }
+
 @media (max-width: 768px) {
   .bg-heading {
     font-size: 2rem;
@@ -309,6 +355,7 @@ body {
     font-size: 1.2rem;
     padding-top: 6rem;
   }
+
   .dish-subhead {
     font-size: 0.9rem;
     text-align: center;
@@ -318,7 +365,9 @@ body {
     font-size: 0.85rem;
   }
 }
+
 @media (max-width: 575px) {
+
   .container,
   .container-fluid {
     padding-left: 16px;
@@ -350,7 +399,7 @@ body {
     width: 45px;
   }
 
-  .feature-box .row > .col {
+  .feature-box .row>.col {
     text-align: left;
   }
 
