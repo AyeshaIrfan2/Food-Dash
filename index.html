@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light" />
-  <title>Food Dash</title>
+  <title>Food Dash - Quick & Tasty Food Delivered</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,135 +24,150 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-header">
+  <header id="home">
+    <nav class="navbar navbar-expand-lg bg-header py-3">
       <div class="container">
-        <a href="" class="navbar-brand">
-          <img src="assests/images/logo.png" alt="">
+        <a href="index.html" class="navbar-brand">
+          <img src="assests/images/logo.png" alt="Food Dash Logo" style="max-height: 45px;">
         </a>
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#buttonOnOff">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#buttonOnOff">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="buttonOnOff">
-          <div class="navbar-nav main-navbar">
-            <a href="" class="nav-link">Home</a>
-            <a href="" class="nav-link">Menu</a>
-            <a href="" class="nav-link">Offers</a>
-            <a href="" class="nav-link">Services</a>
-            <a href="" class="nav-link">About Us</a>
+          <div class="navbar-nav main-navbar gap-lg-3 text-center py-2 py-lg-0">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#menu" class="nav-link">Menu</a>
+            <a href="#offers" class="nav-link">Offers</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#footer" class="nav-link">About Us</a>
+            <a href="login.html" class="nav-link d-lg-none text-orange fw-bold">Sign In / Register</a>
           </div>
         </div>
 
-        <div class="d-flex align-items-center">
-          <div class="search-icon rounded-circle d-flex align-items-center justify-content-center"><i
-              class="bi bi-search"></i></div>
-          <img src="assests/images/customer.png" alt="">
+        <div class="d-flex align-items-center gap-2">
+          <div class="search-icon rounded-circle d-flex align-items-center justify-content-center cursor-pointer" title="Search Dishes">
+            <i class="bi bi-search"></i>
+          </div>
+          <a href="login.html" class="user-avatar-link" title="Login / Profile">
+            <img src="assests/images/customer.png" alt="User Profile" class="rounded-circle" />
+          </a>
         </div>
       </div>
-
     </nav>
   </header>
 
   <main>
-    <div class="bg-header position-relative">
+    <!-- Hero Section -->
+    <div class="bg-header position-relative pt-3 pb-5">
       <div class="container">
-        <div class="row">
-          <div
-            class="col-lg-7 col-12 text-lg-start text-center d-flex flex-column align-items-lg-start align-items-center justify-content-center gap-3">
+        <div class="row align-items-center">
+          <div class="col-lg-7 col-12 text-lg-start text-center d-flex flex-column align-items-lg-start align-items-center justify-content-center gap-3">
             <div class="bg-heading">
-              <span>Quick</span> and <span>Tasty Food Delivered </span>with
-              <span>a Dash of </span> Speed
+              <span>Quick</span> and <span>Tasty Food Delivered </span>with <span>a Dash of </span> Speed
             </div>
+            <p class="text-muted fs-5 mb-2">Order hot, freshly cooked meals from top local restaurants directly to your doorstep in 30 minutes.</p>
 
-            <button class="btn btn-primary rounded-pill btn-order-now">
-              Order Now
-            </button>
-            <button class="btn btn-outline-primary rounded-pill btn-track-order">
-              Track Order
-            </button>
+            <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+              <button class="btn btn-primary rounded-pill btn-order-now py-2 fw-semibold">
+                Order Now
+              </button>
+              <button class="btn btn-outline-primary rounded-pill btn-track-order py-2 fw-semibold">
+                Track Order
+              </button>
+            </div>
           </div>
 
-          <div class="col-lg-5 col-12 header-img">
-            <img class="img-fluid pb-5" src="assests/images/header.png" alt="loading..." />
+          <div class="col-lg-5 col-12 header-img mt-4 mt-lg-0 text-center">
+            <img class="img-fluid pb-3" src="assests/images/header.png" alt="Food Dash Hero Meal" />
           </div>
         </div>
 
-        <!-- row2 -->
-        <div class="bg-white shadow rounded-4 p-3 position-absolute top-100 start-50 translate-middle w-75">
-          <div class="row">
-            <div class="col-4 d-flex align-items-center gap-3">
-              <img src="assests\images\icons\fast-delivery.png" alt="">
+        <!-- Row 2 Feature Box -->
+        <div class="bg-white shadow rounded-4 p-4 position-absolute top-100 start-50 translate-middle w-75 feature-banner-container" id="services">
+          <div class="row gy-3">
+            <div class="col-lg-4 col-12 d-flex align-items-center gap-3">
+              <img class="icons" src="assests/images/icons/fast-delivery.png" alt="Fast Delivery">
               <div>
                 <div class="d-box-heading">Fast Delivery</div>
                 <div class="d-box-subheading">Promise To Deliver Within 30 Mins</div>
               </div>
-
             </div>
-            <div class="col-4 d-flex align-items-center gap-3">
-              <img src="assests\images\icons\fresh.png" alt="">
+            <div class="col-lg-4 col-12 d-flex align-items-center gap-3">
+              <img class="icons" src="assests/images/icons/fresh.png" alt="Fresh Food">
               <div>
                 <div class="d-box-heading">Fresh Food</div>
-                <div class="d-box-subheading">Your Food Will Be Delivered 100% Fresh To Your Home.
-                </div>
+                <div class="d-box-subheading">Your Food Will Be Delivered 100% Fresh To Your Home.</div>
               </div>
-
             </div>
-            <div class="col-4 d-flex align-items-center gap-3">
-              <img src="assests\images\icons\box.png" alt="">
+            <div class="col-lg-4 col-12 d-flex align-items-center gap-3">
+              <img class="icons" src="assests/images/icons/box.png" alt="Free Delivery">
               <div>
                 <div class="d-box-heading">Free Delivery</div>
-                <div class="d-box-subheading">Your Food Delivery Is Absolutely Free. No Cost Just Order
-                </div>
+                <div class="d-box-subheading">Your Food Delivery Is Absolutely Free. No Cost Just Order</div>
               </div>
-
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- indian dish  -->
-    <section class="indian-head">
+
+    <!-- Indian Dish Section -->
+    <section class="indian-head" id="indian-dishes">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 col-12 bg-heading text-lg-start text-center">
             Our <span>Best Delivered </span>Indian Dish
           </div>
           <div class="col-lg-2 d-none d-lg-block"></div>
-          <div
-            class="col-lg-4 col-12 dish-subhead d-flex align-items-center text-lg-start text-center justify-content-center justify-content-lg-start mt-3 mt-lg-0">
+          <div class="col-lg-4 col-12 dish-subhead d-flex align-items-center text-lg-start text-center justify-content-center justify-content-lg-start mt-3 mt-lg-0">
             <div>
-              It’s Not Just About Bringing You Good Food From Restaurants, We
-              Deliver You Experience
+              It’s Not Just About Bringing You Good Food From Restaurants, We Deliver You Experience.
             </div>
           </div>
         </div>
-        <!-- products -->
+
+        <!-- Products -->
         <div class="row gy-4 mt-2">
           <div class="col-md-4 col-12 text-center">
-            <img class="img-fluid" src="assests/images/food/veg-pulao.png" alt="loading..." />
-            <div class="p-name">Indian Vegetable Pulao</div>
-            <a href="" class="p-link">Order Now ></a>
+            <div class="p-3 bg-light rounded-4 h-100 d-flex flex-column justify-content-between align-items-center">
+              <img class="img-fluid mb-2" src="assests/images/food/veg-pulao.png" alt="Indian Vegetable Pulao" style="max-height: 180px; object-fit: contain;" />
+              <div>
+                <div class="p-name">Indian Vegetable Pulao</div>
+                <a href="#order" class="p-link">Order Now &gt;</a>
+              </div>
+            </div>
           </div>
           <div class="col-md-4 col-12 text-center">
-            <img class="img-fluid" src="assests/images/food/paneer-bhuna.png" alt="loading..." />
-            <div class="p-name">Paneer Bhuna Masala</div>
-            <a href="" class="p-link">Order Now ></a>
+            <div class="p-3 bg-light rounded-4 h-100 d-flex flex-column justify-content-between align-items-center">
+              <img class="img-fluid mb-2" src="assests/images/food/paneer-bhuna.png" alt="Paneer Bhuna Masala" style="max-height: 180px; object-fit: contain;" />
+              <div>
+                <div class="p-name">Paneer Bhuna Masala</div>
+                <a href="#order" class="p-link">Order Now &gt;</a>
+              </div>
+            </div>
           </div>
           <div class="col-md-4 col-12 text-center">
-            <img class="img-fluid" src="assests/images/food/upma.png" alt="loading..." />
-            <div class="p-name">Vermicelli Upma</div>
-            <a href="" class="p-link">Order Now ></a>
+            <div class="p-3 bg-light rounded-4 h-100 d-flex flex-column justify-content-between align-items-center">
+              <img class="img-fluid mb-2" src="assests/images/food/upma.png" alt="Vermicelli Upma" style="max-height: 180px; object-fit: contain;" />
+              <div>
+                <div class="p-name">Vermicelli Upma</div>
+                <a href="#order" class="p-link">Order Now &gt;</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- section-3 -->
-    <section>
-      <!-- part-1 -->
-      <div class="container-fluid">
-        <div class="row random-bar">
-          <div
-            class="region-strip d-flex flex-wrap justify-content-center justify-content-lg-between align-items-center">
+
+    <!-- Region Strip & Regular Menu -->
+    <section id="menu">
+      <div class="container-fluid mt-5">
+        <div class="row random-bar py-2">
+          <div class="region-strip d-flex flex-wrap justify-content-center justify-content-lg-between align-items-center px-lg-5">
+            <div class="region-item active-region">
+              <img src="assests/images/Star1.png" alt="" />
+              All
+            </div>
             <div class="region-item">
               <img src="assests/images/Star1.png" alt="" />
               Rajasthan
@@ -176,158 +191,140 @@
           </div>
         </div>
       </div>
+
       <div class="container">
-
-
-        <!-- part-2 -->
-        <div class="row align-items-center">
-          <div class="col-9 col-12 text-lg-start text-center">
-            <div class="bg-heading pt-5">Our <span>Regular</span> Menu</div>
-            <div class="dish-subhead mt-3">
+        <!-- Part 2 Heading -->
+        <div class="row align-items-end">
+          <div class="col-lg-9 col-12 text-lg-start text-center">
+            <div class="bg-heading pt-4">Our <span>Regular</span> Menu</div>
+            <div class="dish-subhead mt-2">
               <div>There Are Our Regular Menus.</div>
               <div>You Can Order Anything You Like.</div>
             </div>
           </div>
-          <div
-            class="col-lg-3 col-12 d-flex align-items-center justify-content-center justify-content-lg-end mt-3 mt-lg-0">
-            <button class="btn btn-primary mt-5 rounded-pill m-btn">
-              See All
-            </button>
+          <div class="col-lg-3 col-12 text-lg-end text-center mt-3 mt-lg-0">
+            <a href="#menu" class="btn btn-primary rounded-pill m-btn px-4">See All</a>
           </div>
         </div>
-        <!-- part-3 -->
+
+        <!-- Part 3 Dishes Grid -->
         <div class="menu-margin">
-          <div class="row gy-4">
+          <div class="row gy-5">
             <div class="col-lg-4 col-md-6 col-12">
-              <!-- parent div  -->
-              <div class="f-name rounded-4 p-3">
-                <div class="position-relative">
-                  <img class="w-50 position-absolute top-0 start-100 translate-middle"
-                    src="assests/images/food/rasmalai.png" alt="" />
-                  <img class="m-img position-absolute top-0 start-100 translate-middle"
-                    src="assests/images/food/Ellipse 2.png" alt="" />
-                </div>
-                <div class="f-text">
-                  <span>Indian Dessert</span> Angoori Rasmalai
+              <div class="f-name p-3">
+                <div class="food-card-header">
+                  <div class="food-card-img-wrapper">
+                    <img class="ellipse-bg m-img" src="assests/images/food/Ellipse 2.png" alt="" />
+                    <img class="dish-img" src="assests/images/food/rasmalai.png" alt="Angoori Rasmalai" />
+                  </div>
                 </div>
                 <div>
-                  ⭐⭐⭐⭐⭐<span class="d-box-subheading">(100)</span>
-                </div>
-                <div class="d-flex justify-content-between">
-                  <h2>₹250</h2>
-                  <button class="btn btn-primary rounded-pill m-btn">
-                    Buy Now
-                  </button>
+                  <div class="f-text"><span>Indian Dessert</span> Angoori Rasmalai</div>
+                  <div class="my-2">⭐⭐⭐⭐⭐<span class="d-box-subheading ms-1">(100)</span></div>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h2 class="m-0 fw-bold">₹250</h2>
+                    <button class="btn btn-primary rounded-pill m-btn">Buy Now</button>
+                  </div>
                 </div>
               </div>
             </div>
+
             <div class="col-lg-4 col-md-6 col-12">
-              <div class="f-name rounded-4 p-3">
-                <div class="position-relative">
-                  <img class="w-50 position-absolute top-0 start-100 translate-middle"
-                    src="assests/images/food/snack1.png" alt="" />
-                  <img class="m-img position-absolute top-0 start-100 translate-middle"
-                    src="assests/images/food/Ellipse 2.png" alt="" />
+              <div class="f-name p-3">
+                <div class="food-card-header">
+                  <div class="food-card-img-wrapper">
+                    <img class="ellipse-bg m-img" src="assests/images/food/Ellipse 2.png" alt="" />
+                    <img class="dish-img" src="assests/images/food/snack1.png" alt="Tea Time Snacks" />
+                  </div>
                 </div>
-                <div class="f-text"><span>Indian</span> Tea Time Snacks</div>
                 <div>
-                  ⭐⭐⭐⭐⭐<span class="d-box-subheading">(80)</span>
-                </div>
-                <div class="d-flex justify-content-between">
-                  <h2>₹250</h2>
-                  <button class="btn btn-primary rounded-pill m-btn">
-                    Buy Now
-                  </button>
+                  <div class="f-text"><span>Indian</span> Tea Time Snacks</div>
+                  <div class="my-2">⭐⭐⭐⭐⭐<span class="d-box-subheading ms-1">(80)</span></div>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h2 class="m-0 fw-bold">₹250</h2>
+                    <button class="btn btn-primary rounded-pill m-btn">Buy Now</button>
+                  </div>
                 </div>
               </div>
             </div>
+
             <div class="col-lg-4 col-md-6 col-12">
-              <div class="f-name rounded-4 p-3">
-                <div class="position-relative">
-                  <img class="w-50 position-absolute top-0 start-100 translate-middle"
-                    src="assests/images/food/snacks2.png" alt="" />
-                  <img class="m-img position-absolute top-0 start-100 translate-middle"
-                    src="assests/images/food/Ellipse 2.png" alt="" />
+              <div class="f-name p-3">
+                <div class="food-card-header">
+                  <div class="food-card-img-wrapper">
+                    <img class="ellipse-bg m-img" src="assests/images/food/Ellipse 2.png" alt="" />
+                    <img class="dish-img" src="assests/images/food/snacks2.png" alt="Tea Time Snacks" />
+                  </div>
                 </div>
-                <div class="f-text"><span>Indian</span> Tea Time Snacks</div>
                 <div>
-                  ⭐⭐⭐⭐⭐<span class="d-box-subheading">(50)</span>
-                </div>
-                <div class="d-flex justify-content-between">
-                  <h2>₹200</h2>
-                  <button class="btn btn-primary rounded-pill m-btn">
-                    Buy Now
-                  </button>
+                  <div class="f-text"><span>Indian</span> Tea Time Snacks</div>
+                  <div class="my-2">⭐⭐⭐⭐⭐<span class="d-box-subheading ms-1">(50)</span></div>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h2 class="m-0 fw-bold">₹200</h2>
+                    <button class="btn btn-primary rounded-pill m-btn">Buy Now</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- part-4 -->
-        <div class="menu-margin">
-          <div class="row gy-4">
+
+        <!-- Part 4 Dishes Grid -->
+        <div class="mt-5">
+          <div class="row gy-5">
             <div class="col-lg-4 col-md-6 col-12">
-              <!-- parent div  -->
-              <div class="f-name rounded-4 p-3">
-                <div class="position-relative">
-                  <img class="w-50 position-absolute top-0 start-100 translate-middle"
-                    src="assests/images/food/dosa.png" alt="" />
-                  <img class="m-img position-absolute top-0 start-100 translate-middle"
-                    src="assests/images/food/Ellipse 2.png" alt="" />
-                </div>
-                <div class="f-text">
-                  <span>South Indian </span> Masala Dosa
+              <div class="f-name p-3">
+                <div class="food-card-header">
+                  <div class="food-card-img-wrapper">
+                    <img class="ellipse-bg m-img" src="assests/images/food/Ellipse 2.png" alt="" />
+                    <img class="dish-img" src="assests/images/food/dosa.png" alt="South Indian Masala Dosa" />
+                  </div>
                 </div>
                 <div>
-                  ⭐⭐⭐⭐⭐<span class="d-box-subheading">(120)</span>
-                </div>
-                <div class="d-flex justify-content-between">
-                  <h2>₹150</h2>
-                  <button class="btn btn-primary rounded-pill m-btn">
-                    Buy Now
-                  </button>
+                  <div class="f-text"><span>South Indian</span> Masala Dosa</div>
+                  <div class="my-2">⭐⭐⭐⭐⭐<span class="d-box-subheading ms-1">(120)</span></div>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h2 class="m-0 fw-bold">₹150</h2>
+                    <button class="btn btn-primary rounded-pill m-btn">Buy Now</button>
+                  </div>
                 </div>
               </div>
             </div>
+
             <div class="col-lg-4 col-md-6 col-12">
-              <div class="f-name rounded-4 p-3">
-                <div class="position-relative">
-                  <img class="w-50 position-absolute top-0 start-100 translate-middle"
-                    src="assests/images/food/pao-bhaji.png" alt="" />
-                  <img class="m-img position-absolute top-0 start-100 translate-middle"
-                    src="assests/images/food/Ellipse 2.png" alt="" />
+              <div class="f-name p-3">
+                <div class="food-card-header">
+                  <div class="food-card-img-wrapper">
+                    <img class="ellipse-bg m-img" src="assests/images/food/Ellipse 2.png" alt="" />
+                    <img class="dish-img" src="assests/images/food/pao-bhaji.png" alt="Gujarati Pav Bhaji" />
+                  </div>
                 </div>
-                <div class="f-text"><span>Gujarati</span> Pav Bhaji</div>
-                <div class="mt-4">
-                  ⭐⭐⭐⭐⭐<span class="d-box-subheading">(80)</span>
-                </div>
-                <div class="d-flex justify-content-between">
-                  <h2>₹250</h2>
-                  <button class="btn btn-primary rounded-pill m-btn">
-                    Buy Now
-                  </button>
+                <div>
+                  <div class="f-text"><span>Gujarati</span> Pav Bhaji</div>
+                  <div class="my-2">⭐⭐⭐⭐⭐<span class="d-box-subheading ms-1">(80)</span></div>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h2 class="m-0 fw-bold">₹250</h2>
+                    <button class="btn btn-primary rounded-pill m-btn">Buy Now</button>
+                  </div>
                 </div>
               </div>
             </div>
+
             <div class="col-lg-4 col-md-6 col-12">
-              <div class="f-name rounded-4 p-3">
-                <div class="position-relative">
-                  <img class="w-50 position-absolute top-0 start-100 translate-middle"
-                    src="assests/images/food/DAL-BAATI-CHURMA.png" alt="" />
-                  <img class="m-img position-absolute top-0 start-100 translate-middle"
-                    src="assests/images/food/Ellipse 2.png" alt="" />
-                </div>
-                <div class="f-text">
-                  <span>Rajasthan</span> Dal Bati Churma
+              <div class="f-name p-3">
+                <div class="food-card-header">
+                  <div class="food-card-img-wrapper">
+                    <img class="ellipse-bg m-img" src="assests/images/food/Ellipse 2.png" alt="" />
+                    <img class="dish-img" src="assests/images/food/DAL-BAATI-CHURMA.png" alt="Rajasthan Dal Bati Churma" />
+                  </div>
                 </div>
                 <div>
-                  ⭐⭐⭐⭐⭐<span class="d-box-subheading">(50)</span>
-                </div>
-                <div class="d-flex justify-content-between">
-                  <h2>₹200</h2>
-                  <button class="btn btn-primary rounded-pill m-btn">
-                    Buy Now
-                  </button>
+                  <div class="f-text"><span>Rajasthan</span> Dal Bati Churma</div>
+                  <div class="my-2">⭐⭐⭐⭐⭐<span class="d-box-subheading ms-1">(50)</span></div>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h2 class="m-0 fw-bold">₹200</h2>
+                    <button class="btn btn-primary rounded-pill m-btn">Buy Now</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -335,20 +332,21 @@
         </div>
       </div>
     </section>
-    <!-- offer-page -->
-    <section>
+
+    <!-- Offer Banners Section -->
+    <section id="offers">
       <div class="offer-page">
         <div class="container">
-          <div class="row gy-3">
+          <div class="row gy-3 align-items-center">
             <div class="col-lg-5 col-12">
-              <img class="img-fluid rounded-4 h-100 w-100 offer-img-main" src="assests/images/img3.png" alt="" />
+              <img class="img-fluid rounded-4 offer-img-main" src="assests/images/img3.png" alt="Special Offer Banner 1" />
             </div>
-            <div class="col-lg-7 d-flex flex-column gap-4">
+            <div class="col-lg-7 d-flex flex-column gap-3">
               <div>
-                <img class="img-fluid" src="assests/images/img2.png" alt="" />
+                <img class="img-fluid rounded-4 w-100" src="assests/images/img2.png" alt="Special Offer Banner 2" />
               </div>
               <div>
-                <img class="img-fluid" src="assests/images/img1.png" alt="" />
+                <img class="img-fluid rounded-4 w-100" src="assests/images/img1.png" alt="Special Offer Banner 3" />
               </div>
             </div>
           </div>
@@ -357,50 +355,53 @@
     </section>
   </main>
 
-  <footer>
+  <footer id="footer">
     <div class="fd-footer">
-      <div class="container mt-4">
+      <div class="container mt-2">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 col-12">
             <div class="col-title"><span>Food</span> Dash</div>
-            <div class="col-data">
+            <div class="col-data mt-2">
               <div>Food Dash ©2023 All Rights Reserved</div>
               <div>By - Piyush Prajapat</div>
             </div>
             <div class="ft-follow">Follow Us On</div>
             <div class="ft-icons">
-              <i class="bi bi-instagram"></i>
-              <i class="bi bi-linkedin"></i>
-              <i class="bi bi-facebook"></i>
-              <i class="bi bi-twitter"></i>
-              <i class="bi bi-globe2"></i>
+              <i class="bi bi-instagram" title="Instagram"></i>
+              <i class="bi bi-linkedin" title="LinkedIn"></i>
+              <i class="bi bi-facebook" title="Facebook"></i>
+              <i class="bi bi-twitter" title="Twitter"></i>
+              <i class="bi bi-globe2" title="Website"></i>
             </div>
           </div>
+
           <div class="col-lg-2 col-md-6 col-12">
             <div class="col-title-2">Menu</div>
-            <div class="col-data">
-              <div>Home</div>
-              <div>Offers</div>
-              <div>Services</div>
-              <div>Avout Us</div>
+            <div class="col-data d-flex flex-column gap-1">
+              <div><a href="#home" class="text-decoration-none text-secondary">Home</a></div>
+              <div><a href="#offers" class="text-decoration-none text-secondary">Offers</a></div>
+              <div><a href="#services" class="text-decoration-none text-secondary">Services</a></div>
+              <div><a href="#footer" class="text-decoration-none text-secondary">About Us</a></div>
             </div>
           </div>
+
           <div class="col-lg-3 col-md-6 col-12">
             <div class="col-title-2">Information</div>
-            <div class="col-data">
-              <div>Menu</div>
-              <div>Quality</div>
-              <div>Make a Choice</div>
-              <div>Fast Delivery</div>
+            <div class="col-data d-flex flex-column gap-1">
+              <div><a href="#menu" class="text-decoration-none text-secondary">Menu</a></div>
+              <div><a href="#services" class="text-decoration-none text-secondary">Quality</a></div>
+              <div><a href="#menu" class="text-decoration-none text-secondary">Make a Choice</a></div>
+              <div><a href="#services" class="text-decoration-none text-secondary">Fast Delivery</a></div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+
+          <div class="col-lg-3 col-md-6 col-12">
             <div class="col-title-2">Contact</div>
-            <div class="col-data-anchor">
-              <div><a href="#">+123456789</a></div>
-              <div><a href="#">Explore</a></div>
-              <div><a href="#">Info@Fooddash.com</a></div>
-              <div><a href="#">12, Maharashtra, Indian</a></div>
+            <div class="col-data-anchor d-flex flex-column gap-1">
+              <div><a href="tel:+123456789">+123456789</a></div>
+              <div><a href="#home">Explore</a></div>
+              <div><a href="mailto:Info@Fooddash.com">Info@Fooddash.com</a></div>
+              <div><span>12, Maharashtra, India</span></div>
             </div>
           </div>
         </div>
@@ -411,6 +412,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+
+  <script src="assests/js/main.js"></script>
 </body>
 
 </html>

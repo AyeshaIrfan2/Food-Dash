@@ -1,65 +1,122 @@
 html {
   color-scheme: light only;
   background-color: #ffffff;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Lexend";
+  font-family: "Lexend", sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   background-color: #ffffff;
 }
 
+/* Colors & Helpers */
+.bg-light-orange {
+  background-color: #ffefe6 !important;
+}
+
+.text-orange {
+  color: #ff6000 !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.pulse-anim {
+  animation: pulseBadge 0.3s ease-in-out;
+}
+
+@keyframes pulseBadge {
+  0% { transform: translate(50%, -50%) scale(1); }
+  50% { transform: translate(50%, -50%) scale(1.4); }
+  100% { transform: translate(50%, -50%) scale(1); }
+}
+
+.fade-in-anim {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Header & Navigation */
 .main-navbar {
   font-weight: 600;
 }
 
-.main-navbar a:hover {
+.main-navbar .nav-link {
+  transition: color 0.2s ease;
+}
+
+.main-navbar .nav-link:hover {
   color: #ff6000;
 }
 
-.search-icon {
+.search-icon, .cart-icon {
   background: #ff6000;
   color: #ffffff;
   width: 3.2rem;
   height: 3.2rem;
-  margin-right: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.search-icon:hover, .cart-icon:hover {
+  transform: scale(1.08);
+  background-color: #fc6101;
+}
+
+.user-avatar-link img {
+  transition: transform 0.2s ease;
+  width: 3.2rem;
+  height: 3.2rem;
+  object-fit: contain;
+}
+
+.user-avatar-link:hover img {
+  transform: scale(1.08);
 }
 
 .bg-header {
   background-color: #ffefe6;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .bg-heading {
-  font-size: clamp(2rem,
-      5vw,
-      2.7rem);
-  /* Responsive font size: min 2rem, preferred 5vw, max 2.7rem     (5vw = 5% of the browser width)*/
+  font-size: clamp(2rem, 5vw, 2.7rem);
   font-weight: 600;
+  line-height: 1.3;
 }
 
 .bg-heading span {
   color: #ff6000;
 }
 
+/* Buttons */
 .btn-order-now {
   background-color: #ff6000;
   border-color: #ff6000;
   width: 220px;
   max-width: 100%;
+  transition: all 0.3s ease;
 }
 
 .btn-order-now:hover {
   background-color: #fc6101;
   border-color: #e55801;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 96, 0, 0.3);
 }
 
 .btn-order-now:active {
   background-color: #da5401 !important;
   border-color: #da5401 !important;
+  transform: translateY(0);
 }
 
 .btn-track-order {
@@ -67,51 +124,63 @@ body {
   width: 220px;
   max-width: 100%;
   color: #ff6000;
+  transition: all 0.3s ease;
 }
 
 .btn-track-order:hover {
   border-color: #ff6000;
   background-color: #ff6000;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 96, 0, 0.2);
 }
 
 .btn-track-order:active {
   border-color: #ff6000 !important;
   background-color: #da5401 !important;
+  color: #ffffff;
+}
+
+/* Feature Box (30 min delivery, Fresh, Free) */
+.feature-banner-container {
+  z-index: 10;
+  transition: transform 0.3s ease;
 }
 
 .d-box-heading {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
 .d-box-subheading {
   color: #939393;
-  font-size: 0.5rems;
+  font-size: 0.85rem;
+  line-height: 1.4;
 }
 
 .header-img {
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 .header-img img {
   max-width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
 .icons {
-  width: 80px;
-  max-width: 20%;
+  width: 60px;
+  max-width: 100%;
   height: auto;
   flex-shrink: 0;
+  object-fit: contain;
 }
 
-/* .feature-box {
-  z-index: 2;
-} */
-
+/* Dishes Sections */
 .dish-subhead {
-  color: #b3b3b3;
-  font-size: 0.8rem;
+  color: #888888;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 .indian-head {
@@ -121,24 +190,40 @@ body {
 .indian-head img {
   max-width: 100%;
   height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.indian-head .col-md-4:hover img {
+  transform: scale(1.05);
 }
 
 .p-name {
-  font-size: 1.3rem;
-  font-weight: 400;
-  padding-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding-top: 0.75rem;
+  padding-bottom: 0.5rem;
 }
 
 .p-link {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-decoration: none;
   color: #ff6000;
+  font-weight: 600;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+  display: inline-block;
 }
 
+.p-link:hover {
+  color: #d65000;
+  padding-left: 5px;
+}
+
+/* Region Strip */
 .random-bar {
   background-color: #ffefe6;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   margin-left: 0;
   margin-right: 0;
 }
@@ -146,33 +231,52 @@ body {
 .region-strip {
   width: 100%;
   row-gap: 0.75rem;
-  column-gap: 2rem;
+  column-gap: 1.5rem;
 }
 
 .region-item {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.5rem;
   white-space: nowrap;
   font-size: 0.95rem;
+  padding: 6px 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.25s ease;
+}
+
+.region-item:hover, .region-item.active-region {
+  background-color: #ff6000;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(255, 96, 0, 0.25);
 }
 
 .region-item img {
   width: 18px;
   height: auto;
   flex-shrink: 0;
+  object-fit: contain;
 }
 
+/* Regular Menu Cards */
 .m-btn {
-  min-width: 120px;
-  padding: 0.6rem;
+  min-width: 110px;
+  padding: 0.5rem 1rem;
   background-color: #ff7b2b;
   border: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: all 0.25s ease;
 }
 
 .m-btn:hover {
   border-color: #ff6000;
   background-color: #ff6000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 96, 0, 0.3);
 }
 
 .m-btn:active {
@@ -180,36 +284,79 @@ body {
   background-color: #da5401 !important;
 }
 
-.image-box {
-  height: 130px;
-}
-
 .f-name {
   background-color: #ffefe6;
   width: 100%;
-  height: 300px;
+  min-height: 280px;
+  height: 100%;
+  border-radius: 1.25rem;
+  position: relative;
   overflow: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.f-name:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(255, 96, 0, 0.15);
+}
+
+.food-card-header {
+  position: relative;
+  height: 90px;
+}
+
+.food-card-img-wrapper {
+  position: absolute;
+  top: -45px;
+  right: 5px;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.food-card-img-wrapper img.dish-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 15px rgba(0,0,0,0.15));
+  transition: transform 0.3s ease;
+}
+
+.f-name:hover .food-card-img-wrapper img.dish-img {
+  transform: scale(1.08) rotate(3deg);
+}
+
+.food-card-img-wrapper img.ellipse-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 0;
+  opacity: 0.85;
 }
 
 .f-text {
-  padding-top: 7rem;
-  font-size: 1.5rem;
+  padding-top: 1rem;
+  font-size: 1.35rem;
   font-weight: 500;
+  line-height: 1.3;
 }
 
 .f-text span {
   color: #ff6000;
 }
 
-.m-img {
-  width: 55%;
-  max-width: 220px;
-}
-
 .menu-margin {
-  margin-top: 7.5rem;
+  margin-top: 6rem;
 }
 
+/* Offers Section */
 .offer-page {
   margin-top: 4rem;
 }
@@ -217,25 +364,35 @@ body {
 .offer-page img {
   max-width: 100%;
   height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.offer-page img:hover {
+  transform: scale(1.02);
 }
 
 .offer-img-main {
-  min-height: 200px;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 1rem;
 }
 
+/* Footer */
 .fd-footer {
   background-color: #ffefe6;
   margin-top: 4.6rem;
   border-top: 0.3rem dashed #ff6000;
   min-height: 325px;
   padding: 50px 0;
-  line-height: 2.5;
+  line-height: 2.2;
 }
 
 .col-title {
   font-size: 2.3rem;
-  font-family: "Wendy One";
+  font-family: "Wendy One", cursive;
 }
 
 .col-title span {
@@ -243,73 +400,69 @@ body {
 }
 
 .col-data {
-  color: #939393;
-  font-size: 1rem;
+  color: #777777;
+  font-size: 0.95rem;
 }
 
 .ft-follow {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #ff6000;
-  font-family: "Wendy One";
+  font-family: "Wendy One", cursive;
+  margin-top: 1rem;
 }
 
 .ft-icons {
-  color: #939393;
-  font-size: 1rem;
+  color: #ff6000;
+  font-size: 1.3rem;
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.ft-icons i {
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.ft-icons i:hover {
+  transform: translateY(-3px) scale(1.1);
+  color: #d65000;
 }
 
 .col-title-2 {
   color: #ff6000;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
 .col-data-anchor a {
-  color: #939393;
-  font-size: 1rem;
+  color: #777777;
+  font-size: 0.95rem;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
+.col-data-anchor a:hover {
+  color: #ff6000;
+  text-decoration: underline;
+}
+
+/* Responsive Media Queries */
 @media (max-width: 991px) {
-  .logo {
-    width: 140px;
-  }
-
-  /* .navbar-nav {
-    text-align: center;
-    gap: 10px;
-    margin: 20px 0;
-  } */
-
-  .nav-icons {
-    justify-content: center;
-    margin-top: 15px;
-  }
-
-  .bg-heading {
-    text-align: center;
-  }
-
-  .btn-order-now,
-  .btn-track-order {
-    width: 100%;
+  .feature-banner-container {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
   }
 
   .header-img {
     text-align: center;
-    margin-top: 40px;
-    padding-bottom: 2rem;
-  }
-
-  .icons {
-    width: 55px;
-  }
-
-  .feature-box {
-    margin-top: 2rem;
-  }
-
-  .random-bar {
-    padding: 15px;
+    margin-top: 20px;
+    padding-bottom: 1rem;
   }
 
   .indian-head {
@@ -317,20 +470,20 @@ body {
   }
 
   .menu-margin {
-    margin-top: 3rem;
+    margin-top: 4rem;
   }
 
   .f-name {
-    margin-bottom: 40px;
-  }
-
-  .offer-page img {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   .fd-footer {
     text-align: center;
     line-height: 2;
+  }
+
+  .ft-icons {
+    justify-content: center;
   }
 
   .col-data-anchor {
@@ -352,30 +505,26 @@ body {
   }
 
   .f-text {
-    font-size: 1.2rem;
-    padding-top: 6rem;
+    font-size: 1.15rem;
+    padding-top: 0.5rem;
   }
 
   .dish-subhead {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     text-align: center;
   }
 
   .region-item {
     font-size: 0.85rem;
+    padding: 4px 12px;
   }
 }
 
 @media (max-width: 575px) {
-
   .container,
   .container-fluid {
     padding-left: 16px;
     padding-right: 16px;
-  }
-
-  .logo {
-    width: 120px;
   }
 
   .bg-heading {
@@ -384,11 +533,11 @@ body {
 
   .btn-order-now,
   .btn-track-order {
-    max-width: 320px;
+    max-width: 100%;
   }
 
   .d-box-heading {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
 
   .d-box-subheading {
@@ -399,35 +548,33 @@ body {
     width: 45px;
   }
 
-  .feature-box .row>.col {
-    text-align: left;
-  }
-
   .p-name {
     font-size: 1.1rem;
   }
 
   .region-strip {
-    column-gap: 1.2rem;
+    column-gap: 0.75rem;
     row-gap: 0.5rem;
   }
 
   .f-name {
-    min-height: 260px;
+    min-height: 250px;
     padding: 1rem !important;
+  }
+
+  .food-card-img-wrapper {
+    width: 110px;
+    height: 110px;
+    top: -30px;
+    right: 0px;
   }
 
   .f-text {
     font-size: 1.05rem;
-    padding-top: 5rem;
-  }
-
-  .m-img {
-    max-width: 160px;
   }
 
   .f-name h2 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   .col-title {
@@ -441,36 +588,24 @@ body {
   .col-title-2 {
     font-size: 1.3rem;
   }
-
-  .offer-img-main {
-    min-height: 160px;
-  }
 }
 
-/* ============ Extra small phones ============ */
 @media (max-width: 400px) {
-  .logo {
-    width: 100px;
-  }
-
   .bg-heading {
-    font-size: 1.4rem;
-  }
-
-  .icons {
-    width: 40px;
+    font-size: 1.35rem;
   }
 
   .f-text {
     font-size: 0.95rem;
-    padding-top: 4.2rem;
   }
 
-  .m-img {
-    max-width: 130px;
+  .food-card-img-wrapper {
+    width: 95px;
+    height: 95px;
+    top: -25px;
   }
 
   .f-name h2 {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
   }
 }
